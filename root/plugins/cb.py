@@ -28,7 +28,7 @@ async def rename_call(c,m):
     pass
   await m.message.delete()
   await c.send_message(
-    text=f"Mode: {mode} \nNow send me new file name without extension",
+    text=f"Mode: {mode} \nNow send me new name For Your File without extension",
     chat_id=m.message.chat.id,
     reply_to_message_id=m.message.reply_to_message.message_id,
     reply_markup=ForceReply(True)
